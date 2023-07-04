@@ -1,0 +1,123 @@
+.index__container {
+    display: flex;
+    flex-direction: column;
+}
+.top__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+    margin-top: 100px;
+    gap: 20px;
+    color: #fff;
+}
+.container {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    border-radius: 200px 10px 0px 10px;
+    
+}
+.clouds {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    color: navy;
+}
+.center__container {
+    width: 510px;
+    /* background-color: rgba(253, 253, 253, 0.754); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    /* border-radius: 70px 10px 0px 10px;
+    box-shadow: 2px 2px 5px 2.5px #19191978; */
+    
+}
+.p__center {
+    font-size: 40px;
+    font-weight:bolder;
+}
+.image {
+    width: 180px;
+    
+}
+
+.wtp__container {
+    background-color: rgba(2, 76, 249, 0.638);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 350px;
+    font-size: 16px;
+    color: aliceblue;
+    border-radius: 100px 15px 30px 30px;
+    box-shadow: 2px 2px 5px 2.5px #19191978;
+}
+.wind {
+    gap: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    width: 250px;
+    height: 50px;
+}
+.temperature {
+    gap: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+}
+.pressure {
+    gap: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+}
+
+.country {
+    gap: 10px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 400px;
+    height: 120px;
+    color: navy;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(250, 251, 252, 0.708);
+    border-radius: 50px 10px 10px 20px;
+    margin-top: 15px;
+}
+
+.botton__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height: 100px;
+    padding-bottom: 150px;
+}
+.button {
+    cursor: pointer;
+    background-color: #f4f5f6b4;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px 2.5px #72727278;
+}
