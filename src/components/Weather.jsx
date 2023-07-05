@@ -6,7 +6,7 @@ const Weather = () => {
 
     const [ data, setData ] = useState({})
     const [countrys, setCountrys] = useState('')
-    const [onLoad, setOnLoad] = useState(false)
+    const [onLoad, setOnLoad] = useState(true)
 
     useEffect(()=> {
 
