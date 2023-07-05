@@ -37,7 +37,7 @@ const Weather = () => {
             <section className='todo'>{ onLoad && <Wait /> }
                 <div className="top__container">
                     <h1 className="title__app">Weather app</h1>
-                    <input value={countrys}  onChange={event => setCountrys(event.target.value)} placeholder="Ingrese país a mostrar" onKeyPress={searchCountry} type="text" name="" id="" className="search__country" />
+                    <input value={countrys}  onChange={event => setCountrys(event.target.value)} placeholder="Ingrese país y presione enter" onKeyPress={searchCountry} type="text" name="" id="" className="search__country" />
                 </div>
                 <div className="container">
                     <div className="center__container">
