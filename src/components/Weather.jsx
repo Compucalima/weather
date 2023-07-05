@@ -19,7 +19,6 @@ const Weather = () => {
             axios.get(weaterUrl1).then((resp) =>{
                 setData(resp.data) 
                 setOnLoad(false)
-                console.log(resp.data.weather[0]?.description);
             })
 
         },function(error){
@@ -42,6 +41,7 @@ const Weather = () => {
     return (
         <>
             <section className='todo'>{ onLoad && <Wait /> }
+
                 <div className="top__container">
                     <h1 className="title__app">Weather app</h1>
                     <input value={countrys}  onChange={event => setCountrys(event.target.value)} placeholder="Ingrese país a mostrar" onKeyPress={searchCountry} type="text" name="" id="" className="search__country" />
@@ -76,6 +76,7 @@ const Weather = () => {
                 <div className="botton__container">
                     <button className="button">Cambiar a:</button>
                 </div>
+
             </section>
         </>
     )
