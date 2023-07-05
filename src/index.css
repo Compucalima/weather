@@ -26,10 +26,8 @@
     background: rgba(255, 255, 255, 0.4) ;
     color: aliceblue;
     box-shadow: 0px 0px 4px 0.5px ;
-
 }
 .container {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,28 +58,28 @@
     width: 180px;
     filter: drop-shadow(0px 0px 4.5px rgb(50, 50, 50));
 }
-
 .wtp__container {
-    background-color: rgba(2, 76, 249, 0.638);
+    background-color: rgba(7, 59, 182, 0.301);
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     flex-direction: column;
     width: 450px;
     height: 350px;
-    font-size: 16px;
+    font-size: 18px;
     color: aliceblue;
     border-radius: 100px 15px 30px 30px;
     box-shadow: 2px 2px 5px 2.5px #19191978;
     padding-top: 25px;
     padding-bottom: 25px;
+    font-weight: 300;
+    backdrop-filter: blur(6.8px);
 }
 .wind {
     gap: 10px;
     display: flex;
     justify-content:space-between;
     align-items: center;
-
     width: 250px;
     height: 50px;
 }
@@ -101,7 +99,6 @@
     width: 250px;
     height: 50px;
 }
-
 .country {
     gap: 10px;
     display: flex;
@@ -116,7 +113,6 @@
     border-radius: 50px 10px 10px 20px;
     margin-top: 15px;
 }
-
 .botton__container {
     display: flex;
     justify-content: center;
@@ -137,14 +133,14 @@
     transition: 0.2s all;
 }
 .button:hover {
-    transform: scale(1.1)
+    background-color: rgba(71, 106, 246, 0.718);
+    color: #fff;
+    transform: scale(1.1);
 }
 .button:active {
     transform: scale(0.85);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    
 }
-
 .charging {
     background-color: #0f0f0f; 
     position: fixed;  
@@ -156,15 +152,10 @@
     justify-content: center;
     align-items: center;
   }
-
-
-
-
   @media screen and (max-width: 768px) {
     .botton__container {
         padding-bottom: 60px;
     }
-
     .container {   
         height: 520px;
     }
@@ -180,21 +171,17 @@
         width: 350px;
         height: 100px;
         font-size: 18px;
-
     }
     .image {
         width: 130px;
-
     }
     .p__center {
         max-width: 200px;
         font-size: 40px;
     }
     .wtp__container {
-
         width: 400px;
         height: 350px;
-
     }
     .pressure {
         gap: 5px;
@@ -224,7 +211,6 @@
         height: 380px;
     }
     .country {
-
         gap: 5px;
         width: 300px;
         height: 100px;
@@ -232,7 +218,6 @@
     }
     .image {
         width: 130px;
-
     }
     .p__center {
         width: 200px;
@@ -242,7 +227,6 @@
 
         width: 320px;
         height: 320px;
-
     }
     .pressure {
         gap: 5px;
@@ -259,7 +243,6 @@
         width: 200px;
         height: 40px;
     }
-
   }
   @media screen and (max-width: 281px) {
     .botton__container {
@@ -280,17 +263,14 @@
     }
     .image {
         width: 120px;
-
     }
     .p__center {
         max-width: 100px;
         font-size: 35px;
     }
     .wtp__container {
-
         width: 280px;
         height: 320px;
-
     }
     .pressure {
         gap: 5px;
@@ -307,5 +287,4 @@
         width: 150px;
         height: 40px;
     }
-
   }  
