@@ -6,7 +6,7 @@ const Weather = () => {
 
     const [ data, setData ] = useState({})
     const [countrys, setCountrys] = useState('')
-    const [onLoad, setOnLoad] = useState(false)
+    const [onLoad, setOnLoad] = useState(true)
 
     useEffect(()=> {
 
@@ -43,7 +43,7 @@ const Weather = () => {
         <>
             <section className='todo'>{ onLoad && <Wait /> }
                 <div className="top__container">
-                    <h1>Weather app</h1>
+                    <h1 className="title__app">Weather app</h1>
                     <input value={countrys}  onChange={event => setCountrys(event.target.value)} placeholder="Ingrese país a mostrar" onKeyPress={searchCountry} type="text" name="" id="" className="search__country" />
                 </div>
 
