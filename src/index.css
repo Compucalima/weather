@@ -1,6 +1,9 @@
 .index__container {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(23, 23, 23, 0.646));
+    animation: backgroundTransition 10s infinite;
+    background-size: 200% 200%;
 }
 .top__container {
     display: flex;
@@ -29,7 +32,9 @@
     justify-content: center;
     align-items: center;
     height: 600px;
-    
+    /* animation: heartWeather 10.2s infinite;
+    transition: background-color 0.5s ease-in-out; */
+
 }
 .clouds {
     display: flex;
@@ -53,13 +58,14 @@
     max-width: 250px;
     font-size: 50px;
     font-weight:bolder;
+    color: #fff;
 }
 .image {
     width: 180px;
     filter: drop-shadow(0px 0px 4.5px rgb(50, 50, 50));
-    animation-name: example;
-    animation-duration: 4s;
-    transition: step-start;
+    
+   
+    
 
 }
 
@@ -147,9 +153,31 @@
     align-items: center;
   }
 
-@keyframes example {
-    0%   {filter: drop-shadow(0px 0px 4.5px rgb(130, 130, 130));}
-    25%  {filter: drop-shadow(0px 0px 4.5px rgb(195, 195, 195));}
-    50%  {filter: drop-shadow(0px 0px 4.5px rgb(89, 89, 89));}
-    100% {filter: drop-shadow(0px 0px 4.5px rgb(192, 192, 191));}
+
+
+
+  @media screen and (max-width: 768px) {
+
   }
+  @media screen and (max-width: 479px) {
+
+  }
+  @media screen and (max-width: 281px) {
+  
+  }
+
+@keyframes backgroundTransition {
+    0%   { background-position: 0% 100%; }
+    50%  { background-position: 100% 0%; }
+    100% { background-position: 0% 100%; }
+}
+
+  /* @keyframes heartWeather {
+    0%   {background-color: rgba(255, 255, 255, 0.11);}
+    25%  {background-color: rgba(255, 255, 255, 0.21);}
+    50%  {background-color: rgba(255, 255, 255, 0.31);}
+    75%  {background-color: rgba(255, 255, 255, 0.41);}
+    100% {background-color: rgba(255, 255, 255, 0.51);}
+  } */
+
+  
