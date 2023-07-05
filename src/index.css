@@ -1,9 +1,8 @@
 .index__container {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(23, 23, 23, 0.646));
-    animation: backgroundTransition 10s infinite;
-    background-size: 200% 200%;
+    width: 100%;
+
 }
 .top__container {
     display: flex;
@@ -155,12 +154,15 @@
 
 
   @media screen and (max-width: 768px) {
+    .botton__container {
+        padding-bottom: 60px;
+    }
     .container {   
         height: 520px;
     }
     .center__container {
         width: 500px;
-        height: 450px;
+        height: 400px;
     }
     .country {
         gap: 5px;
@@ -200,17 +202,105 @@
     }
   }
   @media screen and (max-width: 479px) {
+    .botton__container {
+        padding-bottom: 60px;
+    }
+    .container {   
+        height: 430px;
+    }
+    .center__container {
+        width: 300px;
+        height: 380px;
+    }
+    .country {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 300px;
+        height: 100px;
+        font-size: 18px;
+    }
+    .image {
+        width: 130px;
+
+    }
+    .p__center {
+        width: 200px;
+        font-size: 35px;
+    }
+    .wtp__container {
+
+        width: 320px;
+        height: 320px;
+
+    }
+    .pressure {
+        gap: 5px;
+        width: 200px;
+        height: 40px;
+    }
+    .wind {
+        gap: 5px;
+        width: 200px;
+        height: 40px;
+    }
+    .clouds__now {
+        gap: 5px;
+        width: 200px;
+        height: 40px;
+    }
 
   }
   @media screen and (max-width: 281px) {
-  
+    .botton__container {
+        padding-bottom: 60px;
+    }
+    .container {   
+        height: 400px;
+    }
+    .center__container {
+        width: 200px;
+        height: 280px;
+    }
+    .country {
+        gap: 5px;
+        width: 200px;
+        height: 100px;
+        font-size: 18px;
+    }
+    .image {
+        width: 120px;
+
+    }
+    .p__center {
+        max-width: 100px;
+        font-size: 35px;
+    }
+    .wtp__container {
+
+        width: 280px;
+        height: 320px;
+
+    }
+    .pressure {
+        gap: 5px;
+        width: 150px;
+        height: 40px;
+    }
+    .wind {
+        gap: 5px;
+        width: 150px;
+        height: 40px;
+    }
+    .clouds__now {
+        gap: 5px;
+        width: 150px;
+        height: 40px;
+    }
+
   }
 
-@keyframes backgroundTransition {
-    0%   { background-position: 0% 100%; }
-    50%  { background-position: 100% 0%; }
-    100% { background-position: 0% 100%; }
-}
+
 
   /* @keyframes heartWeather {
     0%   {background-color: rgba(255, 255, 255, 0.11);}

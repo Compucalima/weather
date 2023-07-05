@@ -9,10 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 body { 
-  position: relative;
+  position:relative;
   font-family: 'Poppins', cursive;
   background-image: url(/img/back.jpg);
   background-repeat: no-repeat;
