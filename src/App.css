@@ -24,6 +24,7 @@ body {
   position: relative;
   width: 80px;
   height: 80px;
+  
 }
 .lds-hourglass:after {
   content: " ";
@@ -36,6 +37,7 @@ body {
   border: 32px solid #fff;
   border-color: #fff transparent #fff transparent;
   animation: lds-hourglass 1.2s infinite;
+  
 }
 @keyframes lds-hourglass {
   0% {

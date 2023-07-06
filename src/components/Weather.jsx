@@ -66,7 +66,7 @@ const Weather = () => {
                     </div>           
                 </div>
                 <div className="botton__container">
-                    <button className="button" onClick={changeTemp}>Celsius/Farenheit</button>
+                    <button className="button" onClick={changeTemp}>Celsius / Farenheit</button>
                 </div>
             </section>
         </>

@@ -2,18 +2,19 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100vh;
 
 }
 .title__app {
     font-size: 45px;
 }
 .top__container {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100px;
-    margin-top: 50px;
+
     gap: 20px;
     color: #fff;
 }
@@ -28,30 +29,32 @@
     box-shadow: 0px 0px 4px 0.5px ;
 }
 .container {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    padding: 15px 10px;
 }
 .clouds {
+    
+    
+    width: 300px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
-
 }
 .center__container {
-    width: 510px;
+    width: 510px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 450px;   
 }
 .p__center {
-    max-width: 140px;
     font-size: 50px;
     font-weight:bolder;
-    color: #fff;
+    color: #f7e306;
 }
 .image {
     
@@ -126,9 +129,11 @@
     align-items: center;    
     width: 100%;
     height: 100px;
-    padding-bottom: 150px;
+    
 }
 .button {
+    margin-top: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
     background-color: #f4f5f6b4;
     padding: 10px 25px;
@@ -167,7 +172,7 @@
         height: 520px;
     }
     .title__app {
-        font-size: 30px;
+        font-size: 40px;
     }
     .center__container {
         width: 500px;
@@ -181,10 +186,6 @@
     }
     .image {
         width: 130px;
-    }
-    .p__center {
-        max-width: 200px;
-        font-size: 40px;
     }
     .wtp__container {
         width: 400px;
@@ -203,42 +204,31 @@
     }
     .clouds__now {
         gap: 5px;
-        width: 250px;
+        width: 250;
         height: 40px;
     }
 
   }
   @media screen and (max-width: 479px) {
-    .botton__container {
-        padding-bottom: 60px;
-    }
     .container {   
         height: 430px;
     }
     .center__container {
         width: 300px;
-        height: 380px;
     }
     .country {
         gap: 5px;
-        width: 320px;
+        width: 330px;
         height: 100px;
-        font-size: 18px;
+        font-size: 17px;
     }
     .image {
-        width: 130px;
-    }
-    .p__center {
-        width: 200px;
-        font-size: 35px;
+        width: 150px;
     }
     .wtp__container {
-
-        width: 340px;
-        height: 320px;
+        width: 330px;
     }
     .pressure {
-
         gap: 5px;
         width: 250px;
         height: 40px;
@@ -254,29 +244,23 @@
         height: 40px;
     }
   }
-  @media screen and (max-width: 281px) {
-    .botton__container {
-        padding-bottom: 60px;
-    }
+  @media screen and (max-width: 350px) {
+  
     .container {   
         height: 400px;
     }
-    .center__container {
-        width: 200px;
-        height: 280px;
-    }
     .country {
         gap: 5px;
-        width: 200px;
-        height: 100px;
-        font-size: 18px;
+        width: 300px;
+        height: 80px;
+        font-size: 16px;
     }
     .image {
         width: 140px;
     }
     .p__center {
-        max-width: 100px;
-        font-size: 35px;
+        
+        font-size: 45px;
     }
     .wtp__container {
         width: 280px;
@@ -285,20 +269,20 @@
     }
     .pressure {
         gap: 5px;
-        width: 150px;
+        width: 250px;
         height: 40px;
     }
     .wind {
         gap: 5px;
-        width: 150px;
+        width: 250px;
         height: 40px;
     }
     .clouds__now {
         gap: 5px;
-        width: 150px;
+        width: 250px;
         height: 40px;
     }
-    .clouds {
-        
+    .button {
+        margin-top: 30px;
     }
   }  
