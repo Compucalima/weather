@@ -42,26 +42,26 @@ const Weather = () => {
                 <div className="container">
                     <div className="center__container">
                         <div className="clouds">
-                        {data.weather && data.weather.length > 0 && (<img className="image" src={`./img/${data.weather[0]?.icon}.svg`} alt="" />)}                        
+                            {data.weather && data.weather.length > 0 && (<img className="image" src={`./img/${data.weather[0]?.icon}.svg`} alt="" />)}                        
                             <p className="p__center">{temperature ? Math.round(data.main?.temp) + "°C" : Math.round((data.main?.temp * 9/5) + 32) + "°F" } </p>
                         </div>
                         <div className="wtp__container">
                             <div className="wind">
-                                <p>Vientos:</p>
+                                <p className="labels">Vientos:</p>
                                 <p>{data.wind?.speed} k/h</p>
                             </div>
                             <div className="clouds__now">
-                                <p>Nubes:</p>
+                                <p className="labels">Nubes:</p>
                                 {data.weather && data.weather.length > 0 && (<p>{data.weather[0]?.description}</p>)}
                             </div>
                             <div className="pressure">
-                                <p>Presión:</p>
+                                <p className="labels">Presión:</p>
                                 <p>{data.main?.pressure}</p>
                             </div>
                         </div>
                         <div className="country">
-                                <p>Country:</p>
-                                <p>{data.name}</p>
+                            <p>Country:</p>
+                            <p>{data.name}</p>
                         </div>
                     </div>           
                 </div>
