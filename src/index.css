@@ -154,7 +154,7 @@
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 .charging {
-    background-color: #0f0f0f; 
+    background-color: #0f0f0fe5; 
     position: fixed;  
     top: 0;
     bottom: 0;
@@ -163,6 +163,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(6.8px);
   }
   @media screen and (max-width: 768px) {
     .botton__container {
