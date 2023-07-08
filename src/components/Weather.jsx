@@ -34,18 +34,6 @@ const Weather = () => {
       }
     }
 
-
-    let temperatureNoNaN;
-    if(!isNaN(temperature)) {
-      if(temperature){
-        temperatureNoNaN= Math.round(data.main?.temp) + "°C";
-      } else {
-        temperatureNoNaN= Math.round((data.main?.temp * 9/5) + 32)+ "°F";
-      }
-    } else {
-      temperatureNoNaN ="-"
-    }
-
     return (
       <>
         <section className='todo'>{ onLoad && <Wait /> }
@@ -58,18 +46,13 @@ const Weather = () => {
               <div className="clouds">
                 {data.weather && data.weather.length > 0 && (<img className="image" src={`./img/${data.weather[0]?.icon}.svg`} alt="" />)}                        
                 
-                <p className="p__center">{temperatureNoNaN}</p>
-                {/* <p className="p__center">
+                <p className="p__center">
                   {temperature ? 
                     Math.round(data.main?.temp) + "°C" 
                   : 
                     Math.round((data.main?.temp * 9/5) + 32) + "°F" } 
-                </p> */}
+                </p>
                 
-
-
-
-
               </div>
               <div className="wtp__container">
                 <div className="wind">
