@@ -6,7 +6,9 @@ const Weather = () => {
   const [countrys, setCountrys] = useState('')
   const [onLoad, setOnLoad] = useState(true)
   const [temperature, setTemperature] = useState(true)
+  
   const changeTemp = () => setTemperature(!temperature)
+
     
   useEffect(()=> {
     navigator.geolocation.getCurrentPosition(function(Position){
@@ -45,14 +47,13 @@ const Weather = () => {
             <div className="center__container">
               <div className="clouds">
                 {data.weather && data.weather.length > 0 && (<img className="image" src={`./img/${data.weather[0]?.icon}.svg`} alt="" />)}                        
-                
                 <p className="p__center">
-                  {temperature ? 
+                  {temperature 
+                  ? 
                     Math.round(data.main?.temp) + "°C" 
                   : 
                     Math.round((data.main?.temp * 9/5) + 32) + "°F" } 
                 </p>
-                
               </div>
               <div className="wtp__container">
                 <div className="wind">
