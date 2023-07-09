@@ -29,6 +29,7 @@
     
 }
 .container{
+
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -222,7 +223,7 @@
   }
   @media screen and (max-width: 479px) {
     .container {   
-        height: 430px;
+        height: 440px;
     }
 
     .country {
@@ -256,7 +257,7 @@
   @media screen and (max-width: 350px) {
   
     .container {   
-        height: 400px;
+        height: 390px;
     }
     .country {
         gap: 5px;
