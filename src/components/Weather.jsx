@@ -51,64 +51,57 @@ const Weather = () => {
             <input value={countrys}  onChange={event => setCountrys(event.target.value)} placeholder="País y presione enter" onKeyPress={searchCountry} type="text" name="" id="" className="search__country" />
           </div>
           <div className="container">
-            <div className="center__container">
-              <div className="clouds">
-                {data.weather && data.weather.length > 0 && (<img className="image" src={`./img/${data.weather[0]?.icon}.svg`} alt="" />)}                        
-                <p className="p__center">
+            <div className="clouds">
+              {data.weather && data.weather.length > 0 && (<img className="image" src={`./img/${data.weather[0]?.icon}.svg`} alt="" />)}                        
+              <p className="p__center">
+                {temperature 
+                  ? 
+                    celsiusOrFahrenheit[0] + "°C" 
+                  : 
+                    celsiusOrFahrenheit[1] + "°F" 
+                } 
+              </p>
+            </div>
+            <div className="wtp__container">
+              <div className="max__min">
+                <p className="label__max">Max: 
                   {temperature 
                     ? 
-                      celsiusOrFahrenheit[0] + "°C" 
+                      " " + celsiusOrFahrenheitMax[0] + "°C" 
                     : 
-                      celsiusOrFahrenheit[1] + "°F" 
+                      " " + celsiusOrFahrenheitMax[1] + "°F" 
                   } 
                 </p>
+                <p className="separator">|</p>
+                <p className="label__min">Min:
+                  {temperature 
+                    ? 
+                      " " + celsiusOrFahrenheitMin[0] + "°C" 
+                    : 
+                      " " + celsiusOrFahrenheitMin[1] + "°F" 
+                  }                   
+                </p>   
               </div>
-              <div className="wtp__container">
-                <div className="max__min">
-                  <p className="label__max">Max: 
-                    {temperature 
-                      ? 
-                        " " + celsiusOrFahrenheitMax[0] + "°C" 
-                      : 
-                        " " + celsiusOrFahrenheitMax[1] + "°F" 
-                    } 
-                  </p>
-                  <p className="separator">|</p>
-                  <p className="label__min">Min:
-                    {temperature 
-                      ? 
-                        " " + celsiusOrFahrenheitMin[0] + "°C" 
-                      : 
-                        " " + celsiusOrFahrenheitMin[1] + "°F" 
-                    }                   
-                  </p>   
-                </div>
-                <div className="wind">
-                  <p className="labels">Vientos:</p>
-                  <p>{data.wind?.speed} k/h</p>
-                </div>
-                <div className="clouds__now">
-                  <p className="labels">Nubes:</p>
-                  {data.weather && data.weather.length > 0 && (<p>{data.weather[0]?.description}</p>)}
-                </div>
-                <div className="pressure">
-                  <p className="labels">Presión:</p>
-                  <p>{data.main?.pressure}</p>
-                </div>
+              <div className="wind">
+                <p className="labels">Vientos:</p>
+                <p>{data.wind?.speed} k/h</p>
               </div>
-
-
-              <div className="country">
-                <p>Country:</p>
-                <p>{data.name}</p>
+              <div className="clouds__now">
+                <p className="labels">Nubes:</p>
+                {data.weather && data.weather.length > 0 && (<p>{data.weather[0]?.description}</p>)}
               </div>
-            </div>           
-          </div>
-          <div className="botton__container">
+              <div className="pressure">
+                <p className="labels">Presión:</p>
+                <p>{data.main?.pressure}</p>
+              </div>
+            </div>
+            <div className="country">
+              <p>Country:</p>
+              <p>{data.name}</p>
+            </div>
             <button className="button" onClick={changeTemp}>
               {isCelsius ? 'Celsius' : 'Fahrenheit'} a {isCelsius ? 'Fahrenheit' : 'Celsius'}
             </button>
-
           </div>
         </section>
       </>
