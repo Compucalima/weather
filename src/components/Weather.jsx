@@ -6,13 +6,16 @@ const Weather = () => {
   const [countrys, setCountrys] = useState('')
   const [onLoad, setOnLoad] = useState(true)
   const [temperature, setTemperature] = useState(true)
+  const [isCelsius, setIsCelsius] = useState(true);
+
   const celsiusOrFahrenheit = [Math.round(data.main?.temp), Math.round((data.main?.temp * 9/5) + 32)]
   const celsiusOrFahrenheitMax =[Math.round(data.main?.temp_max), Math.round((data.main?.temp_max * 9/5) + 32)]
   const celsiusOrFahrenheitMin =[Math.round(data.main?.temp_min), Math.round((data.main?.temp_min * 9/5) + 32)]
   
-  
-  const changeTemp = () => setTemperature(!temperature)
-
+  const changeTemp = () => {
+    setTemperature(!temperature)
+    setIsCelsius(!isCelsius)
+  }
     
   useEffect(()=> {
     navigator.geolocation.getCurrentPosition(function(Position){
@@ -102,7 +105,10 @@ const Weather = () => {
             </div>           
           </div>
           <div className="botton__container">
-            <button className="button" onClick={changeTemp}>Celsius / Farenheit</button>
+            <button className="button" onClick={changeTemp}>
+              {isCelsius ? 'Celsius' : 'Fahrenheit'} a {isCelsius ? 'Fahrenheit' : 'Celsius'}
+            </button>
+
           </div>
         </section>
       </>
