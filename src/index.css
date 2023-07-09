@@ -254,6 +254,7 @@
         height: 40px;
     }
   }
+
   @media screen and (max-width: 350px) {
   
     .container {   
@@ -295,4 +296,4 @@
     .button {
         margin-top: 30px;
     }
-  }  
+  } 
