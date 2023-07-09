@@ -71,13 +71,40 @@
     height: 350px;
     font-size: 18px;
     color: aliceblue;
-    border-radius: 100px 15px 30px 30px;
+    border-radius: 10px 100px 30px 30px;
     box-shadow: 2px 2px 5px 2.5px #19191978;
     padding-top: 25px;
     padding-bottom: 25px;
     font-weight: 300;
     
 }
+.max__min {
+    height: 50px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+.separator {
+    font-size: 26px;
+    color: rgb(227, 248, 171);
+}
+.label__max {
+    background-color: rgb(251, 121, 35, 0.75);
+    padding: 3px 6px;
+    border-radius: 3px;
+
+}
+
+.label__min {
+    background-color: rgb(52, 84, 136, 0.75);
+    padding: 3px 6px;
+    border-radius: 3px;
+
+}
+
+
+
 .labels {
     text-shadow:1px 2px 3px #424242;
     

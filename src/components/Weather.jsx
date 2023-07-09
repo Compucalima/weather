@@ -6,6 +6,10 @@ const Weather = () => {
   const [countrys, setCountrys] = useState('')
   const [onLoad, setOnLoad] = useState(true)
   const [temperature, setTemperature] = useState(true)
+  const celsiusOrFahrenheit = [Math.round(data.main?.temp), Math.round((data.main?.temp * 9/5) + 32)]
+  const celsiusOrFahrenheitMax =[Math.round(data.main?.temp_max), Math.round((data.main?.temp_max * 9/5) + 32)]
+  const celsiusOrFahrenheitMin =[Math.round(data.main?.temp_min), Math.round((data.main?.temp_min * 9/5) + 32)]
+  
   
   const changeTemp = () => setTemperature(!temperature)
 
@@ -49,13 +53,33 @@ const Weather = () => {
                 {data.weather && data.weather.length > 0 && (<img className="image" src={`./img/${data.weather[0]?.icon}.svg`} alt="" />)}                        
                 <p className="p__center">
                   {temperature 
-                  ? 
-                    Math.round(data.main?.temp) + "°C" 
-                  : 
-                    Math.round((data.main?.temp * 9/5) + 32) + "°F" } 
+                    ? 
+                      celsiusOrFahrenheit[0] + "°C" 
+                    : 
+                      celsiusOrFahrenheit[1] + "°F" 
+                  } 
                 </p>
               </div>
               <div className="wtp__container">
+                <div className="max__min">
+                  <p className="label__max">Max: 
+                    {temperature 
+                      ? 
+                        " " + celsiusOrFahrenheitMax[0] + "°C" 
+                      : 
+                        " " + celsiusOrFahrenheitMax[1] + "°F" 
+                    } 
+                  </p>
+                  <p className="separator">|</p>
+                  <p className="label__min">Min:
+                    {temperature 
+                      ? 
+                        " " + celsiusOrFahrenheitMin[0] + "°C" 
+                      : 
+                        " " + celsiusOrFahrenheitMin[1] + "°F" 
+                    }                   
+                  </p>   
+                </div>
                 <div className="wind">
                   <p className="labels">Vientos:</p>
                   <p>{data.wind?.speed} k/h</p>
@@ -69,6 +93,8 @@ const Weather = () => {
                   <p>{data.main?.pressure}</p>
                 </div>
               </div>
+
+
               <div className="country">
                 <p>Country:</p>
                 <p>{data.name}</p>
