@@ -140,7 +140,7 @@
     align-items: center;
     width: 400px;
     height: 60px;
-    color: navy;
+    color: rgb(3, 76, 159);
     font-size: 20px;
     font-weight: bold;
     background-color: rgba(250, 251, 252, 0.708);
@@ -207,7 +207,7 @@
     .country {
         gap: 5px;
         width: 350px;
-        height: 100px;
+        height: 40px;
         font-size: 18px;
     }
     .image {
@@ -246,7 +246,7 @@
     .country {
         gap: 5px;
         width: 330px;
-        height: 100px;
+        height: 40px;
         font-size: 17px;
     }
     .image {
@@ -295,7 +295,7 @@
     .country {
         gap: 5px;
         width: 300px;
-        height: 80px;
+        height: 30px;
         font-size: 16px;
     }
     .clouds {
