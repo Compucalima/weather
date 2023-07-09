@@ -6,16 +6,15 @@
 
 }
 .title__app {
+    
     font-size: 45px;
 }
 .top__container {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-
-    gap: 20px;
+    gap: 10px;
     color: #fff;
 }
 .search__country{
@@ -27,6 +26,7 @@
     background: rgba(255, 255, 255, 0.4) ;
     color: aliceblue;
     box-shadow: 0px 0px 4px 0.5px ;
+    
 }
 .container {
     
@@ -71,10 +71,10 @@
     height: 350px;
     font-size: 18px;
     color: aliceblue;
-    border-radius: 10px 100px 30px 30px;
+    border-radius: 100px 10px 30px 30px;
     box-shadow: 2px 2px 5px 2.5px #19191978;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: 300;
     
 }
@@ -93,18 +93,15 @@
     background-color: rgb(251, 121, 35, 0.75);
     padding: 3px 6px;
     border-radius: 3px;
-
+    border-radius: 50px 10px 30px 30px;
 }
 
 .label__min {
     background-color: rgb(52, 84, 136, 0.75);
     padding: 3px 6px;
-    border-radius: 3px;
+    border-radius: 50px 10px 30px 30px;
 
 }
-
-
-
 .labels {
     text-shadow:1px 2px 3px #424242;
     
@@ -115,7 +112,7 @@
     justify-content:space-between;
     align-items: center;
     width: 250px;
-    height: 50px;
+    height: 40px;
     border-bottom: 1px #829fffbb dashed;
 }
 .clouds__now {
@@ -124,7 +121,7 @@
     justify-content:space-between;
     align-items: center;
     width: 250px;
-    height: 50px;
+    height: 40px;
     border-bottom: 1px #829fffbb dashed;
 }
 .pressure {
@@ -133,7 +130,7 @@
     justify-content:space-between;
     align-items: center;
     width: 250px;
-    height: 50px;
+    height: 40px;
     border-bottom: 1px #829fffbb dashed;
 }
 .country {
