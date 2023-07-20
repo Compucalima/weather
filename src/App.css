@@ -59,7 +59,7 @@ body {
   animation: snowing 5s linear infinite;
   animation-duration: calc(15s / var(--i));
   transform-origin: bottom;
-  z-index: 250;
+  z-index: 350;
 }
 
 @keyframes snowing {
