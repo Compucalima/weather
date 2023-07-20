@@ -24,7 +24,8 @@ const Weather = () => {
       const weaterUrl1= `https://api.openweathermap.org/data/2.5/weather?lat=${Latitude}&lon=${Longitude}&appid=55499aeb43c1f14e789bc948de62d7f3&lang=es&units=metric`
        
       console.log(Latitude, Longitude);
-      axios.get(weaterUrl1).then((resp) =>{
+      axios.get(weaterUrl1)
+      .then((resp) =>{
         setData(resp.data) 
         setOnLoad(false)
         })
