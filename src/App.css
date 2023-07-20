@@ -26,6 +26,7 @@ body {
   height: 30px;
   background: #fff;
   border-radius: 100px;
+  z-index: 250;
 }
 
 .loader::before {
